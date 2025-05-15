@@ -9,7 +9,7 @@ def pam_match(seq, pam_pattern):
             return False
     return True
 
-def find_targets(sequence, pam_pattern='NGG', target_len=20):
+def find_targets(sequence, pam_pattern, target_len):
     """Find all CRISPR target sites in sequence matching PAM on both strands."""
     sequence = sequence.upper()
     rev_comp_seq = reverse_complement(sequence)

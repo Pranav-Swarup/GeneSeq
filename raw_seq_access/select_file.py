@@ -1,7 +1,7 @@
 import os
 from .load_seq import load_seq_from_file
 
-def list_txt_files(directory="datalibrary", return_count=False):
+def list_txt_files(directory="datalibrary/rawsequences", return_count=False):
     files = [
         f for f in os.listdir(directory)
         if f.strip().lower().endswith("seq.txt")
@@ -32,7 +32,7 @@ def find_file_and_load():
         print("Please enter a valid number.")
         exit()
 
-    filepath = f"datalibrary/{files[choice]}"
+    filepath = f"datalibrary/rawsequences/{files[choice]}"
     sequence = load_seq_from_file(filepath)
 
     if not sequence:
