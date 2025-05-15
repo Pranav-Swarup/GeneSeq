@@ -12,10 +12,10 @@ A CRISPR gRNA mapping tool that:
 3. Scan for targets with specified PAMs
 
 ## Folder Structure
-GeneSeq/
-├── datalibrary/   -> place to store gene sequences locally as `{GENE SYMBOL}_{ENSEMBL_TRANSCRIPT_ID}_seq.txt` files.
-├── ensembl_fetch/ -> fetching various genetic data from ensembl
-├── lib_access/    -> access to the local datalibrary
-├── seq_scan/      -> scans the + and - strands for matches
-├── grna_map.py    -> main function
-└── README.md
+GeneSeq/  
+├── datalibrary/   -> place to store gene sequences locally as `{GENE SYMBOL}_{ENSEMBL_TRANSCRIPT_ID}_seq.txt` files.  
+├── ensembl_fetch/ -> fetching various genetic data from ensembl  
+├── lib_access/    -> access to the local datalibrary  
+├── seq_scan/      -> scans the + and - strands for matches  
+├── grna_map.py    -> main function  
+└── README.md  
