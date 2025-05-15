@@ -33,11 +33,20 @@
 ## Folder Structure
 GeneSeq/  
 |--- datalibrary/   
-|------|--- rawsequences    -> repository with gene sequences locally as `{GENE SYMBOL}_{ENSEMBL_TRANSCRIPT_ID}_seq.txt` files. 
-|------|--- sqlite_dbs      -> unique sqlite dbs for each variation of params - `db_{ENSEMBL_TRANSCRIPT_ID}_{PAM}_{TARGET_LEN}_.db`  
-|--- db_access/             -> to check if a db exists, if not - functions to create and access it.  
-|--- ensembl_fetch/         -> fetching various genetic data from ensembl  
-|--- raw_seq_access/        -> functions to directly access to the local datalibrary/rawsequences bypassing the DB.  
-|--- seq_scan/              -> scans the gene sequence for matches based on GENE, PAM and TARGET LENGTH.  
-|--- grna_map.py            -> main function  
+|------|--- rawsequences        1  
+|------|--- sqlite_dbs          2  
+|--- db_access/                 3  
+|--- ensembl_fetch/             4  
+|--- raw_seq_access/            5  
+|--- seq_scan/                  6  
+|--- grna_map.py                7  
 |--- README.md  
+
+## Folder and File Purposes
+-> repository with gene sequences locally as `{GENE SYMBOL}_{ENSEMBL_TRANSCRIPT_ID}_seq.txt` files.  
+-> unique sqlite dbs for each variation of params - `db_{ENSEMBL_TRANSCRIPT_ID}_{PAM}_{TARGET_LEN}_.db`  
+-> to check if a db exists, if not - functions to create and access it.  
+-> fetching various genetic data from ensembl  
+-> functions to directly access to the local datalibrary/rawsequences bypassing the DB.  
+-> scans the gene sequence for matches based on GENE, PAM and TARGET LENGTH.  
+-> main function  
